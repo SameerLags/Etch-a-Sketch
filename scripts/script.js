@@ -37,11 +37,14 @@ function resetGrid(e){
 const reset = document.querySelector("#reset");
 reset.addEventListener("click", resetGrid);
 
+
+function colorGridItem(e){
+    // e.target.classList.add("colorGridItem");
+    e.target.style["background-color"] = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+};
 function mouseover(){
     const gridItems = document.querySelectorAll(".gridItem");
     gridItems.forEach(gridItem => {
-        gridItem.addEventListener('mouseover', (e) => {
-            e.target.classList.add("colorGridItem");
-        });
+        gridItem.addEventListener('mouseover', colorGridItem);
     });
 };
