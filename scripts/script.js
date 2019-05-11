@@ -19,6 +19,7 @@ centreGrid();
 
 function centreGrid(){
     let d = document.querySelector('.gridContainer');
+    let r = document.querySelector('#reset');
     let w = window.innerWidth;
     let h = window.innerHeight;
     let divW = d.clientWidth;
@@ -26,6 +27,7 @@ function centreGrid(){
     d.style.position="absolute";
     d.style.top = (h/2)-(divH/2)+"px";
     d.style.left = (w/2)-(divW/2)+"px";
+    r.style.left = (w/2)-(r.clientWidth/2)+"px";
 };
 
 function resetGrid(e){

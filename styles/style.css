@@ -5,16 +5,19 @@ html{
 
 .gridContainer{
     display: grid;
-    grid-gap: 2px 2px;
-    padding: 5px;
     min-height: 85vh;
+    padding: 0px;
     width: 85vh;
-    background-color: seagreen;
-    border: .4rem solid black;
+    border: .2rem solid rebeccapurple;
 }
 
 .gridItem{
-    background-color: black;
+    border: .1rem solid black;
+}
+
+#reset{
+    display: block;
+    position: absolute;
 }
 
 /* .colorGridItem{
